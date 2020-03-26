@@ -1,3 +1,5 @@
+package com.example.lr3;
+
 public class Phraser {
 
     public static String PhraserGen() {
@@ -27,9 +29,8 @@ public class Phraser {
         int r2 = (int) (Math.random() * twoLength) ;
         int r3 = (int) (Math.random() * threeLength);
         //Теперь строим фразу
-        String phrase = wordListOne[rl] + " " +
+        return wordListOne[rl] + " " +
                 wordListTwo[r2] + " " + wordListThree[r3];
-        return phrase;
     }
 
 }
